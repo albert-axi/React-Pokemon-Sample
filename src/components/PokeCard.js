@@ -1,19 +1,19 @@
-import { Component } from "react";
+import { useContext } from "react";
+import { ThemeContext } from "../contexts/ThemeContext";
 
-class PokeCard extends Component {
+const PokeCard = ({image, name, types}) => {
 
-  logTitle = () => console.log(this.props.title)
+  const theme = useContext(ThemeContext)
 
-  render() {
-    return (
-      <div className="poke-card">
-        <img src={this.props.image} alt={ this.props.name }/>
-        <h2>{this.props.name}</h2>
-        <small>Types: {this.props.types.join(", ")}</small>
-      </div>
-    )
-  }
+  return (
+    <div className="poke-card" style={{ background: theme.background, color: theme.foreground }} >
+      <img src={image} alt={name} />
+      <h2>{name}</h2>
+      <small>Types: {types.join(", ")}</small>
+    </div>
+  )
 }
+
 
 PokeCard.defaultProps = {
   image: 'http://i.imgur.com/bJw8ndW.png',

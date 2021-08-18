@@ -1,21 +1,19 @@
-import { Component } from 'react'
+import { useContext } from 'react'
 import Pokedex from '../components/Pokedex'
+import { PokemonContext } from '../contexts/PokemonContext'
 
-class PokemonPage extends Component {
+const PokemonPage = (props)=>{
 
-  render() {
+  const {pokemonState, pokemonDataState} = useContext(PokemonContext);
+
+ 
     return (
       <>
         <h1 style={{display: 'grid', justifyContent: 'center'}}>Pokemon Page</h1>
-        <Pokedex
-          {...this.props}
-          pokemonData={this.props.pokemonData}
-          pokemon={this.props.pokemon}
-        />
-        {console.log("PROPS: ", this.props)}
+        <Pokedex />
       </>
     )
-  }
+  
 }
 
 export default PokemonPage

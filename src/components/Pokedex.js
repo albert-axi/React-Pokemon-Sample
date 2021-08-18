@@ -1,11 +1,14 @@
-import { Component } from "react"
+import { useContext } from "react"
 import {Link} from 'react-router-dom'
 import PokeCard from "./PokeCard"
+import { PokemonContext } from '../contexts/PokemonContext'
 
-class Pokedex extends Component {
+const Pokedex = ()=>{
 
-  renderPokemonCards = () => {
-    const {pokemonData, pokemon} = this.props
+  const {pokemonDataState} = useContext(PokemonContext)
+  const [pokemonData] = pokemonDataState
+
+  const renderPokemonCards = () => {
 
     return Object.keys(pokemonData).map(pokemon => (
       <Link key={pokemon} to={`/pokemon/${pokemon}`}>
@@ -20,16 +23,15 @@ class Pokedex extends Component {
     )
   }
 
-  render() {
+
     return (
       <div className="pokedex">
-        <h1 onClick={this.updatePokemonDataToApp}>Pokedex</h1>
+        <h1>Pokedex</h1>
         <div className="pokemon-list">
-          {this.renderPokemonCards()}
+          {renderPokemonCards()}
         </div>
       </div>
     )
-  }
 }
 
 export default Pokedex
