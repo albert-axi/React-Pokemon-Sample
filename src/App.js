@@ -8,6 +8,9 @@ import ContactPage from './pages/ContactPage'
 import PokemonShow from './components/PokemonShow'
 import { ThemeContext, themes } from './contexts/ThemeContext'
 import { PokemonContext } from './contexts/PokemonContext'
+import SignInScreen from './components/SignInScreen';
+import './firebaseui-styling.global.css'; // Import globally.
+
 
 const App = () => {
 
@@ -55,6 +58,7 @@ const App = () => {
     <ThemeContext.Provider value={themes.light}>
       <BrowserRouter>
         <Nav />
+        <SignInScreen />
         <Route exact path="/" component={HomePage} />
         <Route path="/contact" component={ContactPage} />
         <Route exact path="/pokemon" render={routerProps => {
