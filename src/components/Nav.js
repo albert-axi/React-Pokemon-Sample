@@ -11,6 +11,7 @@ const Nav = () => {
       <Link to="/">Home</Link>
       <Link to="/pokemon">Pokemon</Link>
       <Link to="/contact">Contact</Link>
+      <Link to="/favourites">Favourites</Link>
     </nav>
   )
 }

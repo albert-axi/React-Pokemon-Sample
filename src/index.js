@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 // import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
-import {PokemonContextProvider} from './contexts/PokemonContext'
+import { PokemonContextProvider } from './contexts/PokemonContext'
+import { FavouritesContextProvider } from './contexts/FavouritesContext'
 
 ReactDOM.render(
   <React.StrictMode>
     <PokemonContextProvider>
-      <App />
+      <FavouritesContextProvider>
+        <App />
+      </FavouritesContextProvider>
     </PokemonContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
