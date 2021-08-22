@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../contexts/ThemeContext";
+import FavouritesButton from "./FavouritesButton";
 
 const PokeCard = ({image, name, types}) => {
 
@@ -10,6 +11,7 @@ const PokeCard = ({image, name, types}) => {
       <img src={image} alt={name} />
       <h2>{name}</h2>
       <small>Types: {types.join(", ")}</small>
+      <FavouritesButton name = {name} />
     </div>
   )
 }

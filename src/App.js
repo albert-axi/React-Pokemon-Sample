@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import PokemonPage from './pages/PokemonPage'
 import Nav from './components/Nav'
 import ContactPage from './pages/ContactPage'
+import FavouritesPage from './pages/FavouritesPage';
 import PokemonShow from './components/PokemonShow'
 import { ThemeContext, themes } from './contexts/ThemeContext'
 import { PokemonContext } from './contexts/PokemonContext'
@@ -61,6 +62,7 @@ const App = () => {
         <SignInScreen />
         <Route exact path="/" component={HomePage} />
         <Route path="/contact" component={ContactPage} />
+        <Route path="/favourites" component={FavouritesPage} />
         <Route exact path="/pokemon" render={routerProps => {
 
           return (Object.keys(pokemonData).length === pokemon.length ?

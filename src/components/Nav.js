@@ -10,6 +10,7 @@ const Nav = () => {
     <nav className="nav-bar" style={{ background: theme.background, color: theme.foreground }}>
       <Link to="/">Home</Link>
       <Link to="/pokemon">Pokemon</Link>
+      <Link to="/favourites">Favourites</Link>
       <Link to="/contact">Contact</Link>
     </nav>
   )
