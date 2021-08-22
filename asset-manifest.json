@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/React-Pokemon-Sample/static/css/main.6d239fc2.chunk.css",
+    "main.js": "/React-Pokemon-Sample/static/js/main.b2f2b47c.chunk.js",
+    "main.js.map": "/React-Pokemon-Sample/static/js/main.b2f2b47c.chunk.js.map",
+    "runtime-main.js": "/React-Pokemon-Sample/static/js/runtime-main.d548de90.js",
+    "runtime-main.js.map": "/React-Pokemon-Sample/static/js/runtime-main.d548de90.js.map",
+    "static/js/2.2b7e032d.chunk.js": "/React-Pokemon-Sample/static/js/2.2b7e032d.chunk.js",
+    "static/js/2.2b7e032d.chunk.js.map": "/React-Pokemon-Sample/static/js/2.2b7e032d.chunk.js.map",
+    "static/js/3.518fd8b9.chunk.js": "/React-Pokemon-Sample/static/js/3.518fd8b9.chunk.js",
+    "static/js/3.518fd8b9.chunk.js.map": "/React-Pokemon-Sample/static/js/3.518fd8b9.chunk.js.map",
+    "index.html": "/React-Pokemon-Sample/index.html",
+    "service-worker.js": "/React-Pokemon-Sample/service-worker.js",
+    "service-worker.js.map": "/React-Pokemon-Sample/service-worker.js.map",
+    "static/css/main.6d239fc2.chunk.css.map": "/React-Pokemon-Sample/static/css/main.6d239fc2.chunk.css.map",
+    "static/js/2.2b7e032d.chunk.js.LICENSE.txt": "/React-Pokemon-Sample/static/js/2.2b7e032d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d548de90.js",
+    "static/js/2.2b7e032d.chunk.js",
+    "static/css/main.6d239fc2.chunk.css",
+    "static/js/main.b2f2b47c.chunk.js"
+  ]
+}
